@@ -24,7 +24,7 @@ class FilmsList extends Component {
         return (
             <ul>
                 {this.state.list.map((film) => {
-                    return <li kei={film.id}>{film.title}</li>;
+                    return <li key={film.id}>{film.title}</li>;
                 })}
             </ul>
         );
